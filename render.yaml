@@ -3,12 +3,13 @@ services:
     name: n8n
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile
+    image:
+      url: docker.io/n8nio/n8n:latest
     envVars:
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
-        value: db.lycdbhkkexzeqammrqaw.supabase.co
+        sync: false
       - key: DB_POSTGRESDB_PORT
         value: "5432"
       - key: DB_POSTGRESDB_DATABASE
@@ -16,15 +17,17 @@ services:
       - key: DB_POSTGRESDB_USER
         value: postgres
       - key: DB_POSTGRESDB_PASSWORD
-        value: Munees@2004
+        sync: false
+      - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
+        value: "false"
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: "Munees@n8n"
+        generateValue: true
       - key: WEBHOOK_URL
-        value: https://n8n-m45f.onrender.com
+        value: https://n8n.onrender.com
       - key: GENERIC_TIMEZONE
         value: Asia/Kolkata
       - key: N8N_PORT
