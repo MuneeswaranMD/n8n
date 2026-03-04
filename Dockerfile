@@ -2,8 +2,8 @@ FROM n8nio/n8n:latest
 
 USER root
 
-# Install curl for healthcheck
-RUN apk add --no-cache curl
+# Install curl for healthcheck (Debian-based image)
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
 USER node
 
