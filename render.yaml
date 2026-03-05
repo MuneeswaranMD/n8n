@@ -26,8 +26,10 @@ services:
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
         generateValue: true
+      - key: N8N_ENCRYPTION_KEY
+        value: n8n_secretroot_key_2024
       - key: WEBHOOK_URL
-        value: https://n8n.onrender.com
+        value: https://n8n-m45f.onrender.com
       - key: GENERIC_TIMEZONE
         value: Asia/Kolkata
       - key: N8N_PORT
