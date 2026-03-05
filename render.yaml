@@ -9,13 +9,13 @@ services:
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
-        value: aws-1-ap-northeast-2.pooler.supabase.com
+        value: db.lycdbhkkexzeqammrqaw.supabase.co
       - key: DB_POSTGRESDB_PORT
-        value: "6543"
+        value: "5432"
       - key: DB_POSTGRESDB_DATABASE
         value: postgres
       - key: DB_POSTGRESDB_USER
-        value: postgres.lycdbhkkexzeqammrqaw
+        value: postgres
       - key: DB_POSTGRESDB_PASSWORD
         value: Munees@2004
       - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
