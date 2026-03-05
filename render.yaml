@@ -9,15 +9,15 @@ services:
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
-        value: aws-1-ap-northeast-2.pooler.supabase.com
+        value: ep-hidden-butterfly-aiz3d7i0-pooler.c-4.us-east-1.aws.neon.tech
       - key: DB_POSTGRESDB_PORT
         value: "5432"
       - key: DB_POSTGRESDB_DATABASE
-        value: postgres
+        value: neondb
       - key: DB_POSTGRESDB_USER
-        value: postgres
+        value: neondb_owner
       - key: DB_POSTGRESDB_PASSWORD
-        value: Munees@2004
+        value: npg_6ZPELYNDWF1X
       - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
         value: "false"
       - key: DB_POSTGRESDB_SSL
