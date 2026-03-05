@@ -15,9 +15,9 @@ services:
       - key: DB_POSTGRESDB_DATABASE
         value: postgres
       - key: DB_POSTGRESDB_USER
-        value: postgres.lycdbhkkexzeqammrqaw
+        value: postgres
       - key: DB_POSTGRESDB_PASSWORD
-        value: "Munees@2004"
+        value: Munees@2004
       - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
         value: "false"
       - key: DB_POSTGRESDB_SSL
